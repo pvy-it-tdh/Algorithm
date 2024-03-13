@@ -20,8 +20,8 @@ bool ktra(int n)
 int main()
 {
     int n;
-    int a[100];
     cin >> n;
+    int *a =new int(n);
     int dem=0;
     int sum=0;
     float tb;

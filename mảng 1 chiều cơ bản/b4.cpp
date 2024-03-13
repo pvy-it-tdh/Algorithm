@@ -3,8 +3,8 @@ using namespace std;
 int main()
 {
     int n,k;
-    int a[100];
     cin >> n;
+    int *a=new int (n);
     int nho=0,lon=0;
     for (int i =0;i<n;i++)
     {
