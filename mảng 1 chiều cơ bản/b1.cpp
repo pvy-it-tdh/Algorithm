@@ -5,7 +5,7 @@ int main()
     int chan=0,le=0,sumchan=0,sumle=0;
     int n;
     cin >> n;
-    int *a =new int (n);
+    int *a =new int [n];
     for (int i=0;i<n;i++)
     {
         cin >> a[i];
@@ -26,5 +26,6 @@ int main()
     cout << le << endl;
     cout << sumchan << endl;
     cout << sumle << endl;
+    delete [] a; 
 
 }

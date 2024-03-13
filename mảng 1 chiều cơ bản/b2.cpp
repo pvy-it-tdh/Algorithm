@@ -21,7 +21,7 @@ int main()
 {
     int n;
     cin >> n;
-    int *a =new int(n);
+    int *a =new int[n];
     int dem=0;
     int sum=0;
     float tb;
@@ -39,4 +39,5 @@ int main()
     }
     tb=(float)sum/dem;
     cout << setprecision(3)<<fixed<< tb;
+    delete [] a; 
 }

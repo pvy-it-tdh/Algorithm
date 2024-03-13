@@ -4,7 +4,7 @@ int main()
 {
     int n;
     cin >> n;
-    int *a=new int(n);
+    int *a=new int[n];
     for (int i=0;i<n;i++)
     {
         cin >> a[i];
@@ -29,5 +29,6 @@ int main()
             dem = 0;
         }
     }
+    delete[] a;
     return 0;
 }

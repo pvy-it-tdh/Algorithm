@@ -4,7 +4,7 @@ int main()
 {
     int n,k;
     cin >> n;
-    int *a=new int (n);
+    int *a=new int[n];
     int nho=0,lon=0;
     for (int i =0;i<n;i++)
     {
@@ -23,4 +23,5 @@ int main()
     }
     cout << nho<< endl;
     cout << lon << endl;
+    delete[] a;
 }
