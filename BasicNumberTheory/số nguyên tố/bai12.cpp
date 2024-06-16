@@ -32,6 +32,8 @@ int main()
         ll l, r;
         cin >> l >> r;
         int c1 = sqrt(l);
+        if (1ll * c1 * c1 != l)
+            ++c1;
         int c2 = sqrt(r);
         int count = 0;
         for (int i = c1; i <= c2; i++)
